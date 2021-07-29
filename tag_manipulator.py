@@ -6,10 +6,7 @@ class TagManipulator():
 
         tempResult = re.split( regex, tags )
         
-        if( len(tempResult[0]) > 0 ):
-            result=tempResult
-        else:
-            for unit in tempResult:
+        for unit in tempResult:
                 if not unit=="":
                     result.append(unit) 
 
